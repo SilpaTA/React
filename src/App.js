@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+function greet(name){
+  return(
+    <h3>{name}</h3>
+  )
 
+}
 function App() {
+  var name = 'silpa';
+  var age = '18';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Welcom {name}</p> 
+      {
+        greet("Silpa")
+      }
+      <p>You are {age>=18? 'Eligible':'not eligible'} for voting</p>
     </div>
   );
 }
