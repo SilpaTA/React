@@ -1,10 +1,14 @@
 import React from "react";
-function Contact(){
+import './Contact.css';
+function Contact(props){
 
     return(
         <>
-        <div>
-            <label>Name</label>
+        <div className="contact-box">
+        <h1>{props.name}-{props.id.name}</h1>
+        <h2>Hello {props.data[1]}</h2>
+        <div style={ {color:"green"} }>
+            <label >Name</label>
             <input type="text" />
         </div>
         <div>
@@ -17,6 +21,7 @@ function Contact(){
         </div>
         <div>
             <input type="submit" value="Send"/>
+        </div>
         </div>
         </>
     )

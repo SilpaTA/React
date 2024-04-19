@@ -1,0 +1,7 @@
+.contact-box{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.contact-box label{
+    width: 100%;
+}

@@ -20,7 +20,7 @@ function App() {
       <p>Welcom {name}</p>
       {/* {greet("Silpa")}
       <p>You are {age >= 18 ? 'Eligible' : 'not eligible'} for voting</p> */}
-      <Contact />
+      <Contact id={{name:"Silpa"}} name="Contact Us" data={["Silpa", "Anandhu"]}/>
     </div>
     <div>
       <Footer />
